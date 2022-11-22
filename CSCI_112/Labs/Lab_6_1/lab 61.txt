@@ -1,0 +1,14 @@
+void getPaid(float *paid, float *due);
+
+void makeChange(float paid, float due, int *dollar, int *qtr, int *dime, int *nkl, int *pen);
+void printResults(float paid, float due, int dollar, int qtr, int dime, int nkl, int pen);
+
+void main()
+{int dollar = 0, qtr = 0, dime = 0, nkl = 0, pen = 0;
+float paid = 0.0, due = 0.0;
+
+getPaid(&paid, &due);
+makeChange(paid, due, &dollar, &qtr, &dime, &nkl, &pen);
+printResults(paid, due, dollar, qtr, dime, nkl, pen);
+
+}
